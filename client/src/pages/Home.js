@@ -31,7 +31,7 @@ const Home = () => {
   const [cookies, setCookie, removeCookie] = useCookies()
   const navigate = useNavigate()
   const { decodedToken, isExpired } = useJwt(cookies.token)
-  console.log(decodedToken)
+ 
 
   const analizeImage = async () => {
     setAlert({ show: true, type: 'secondary', text: 'Recognizing your face' })
@@ -164,7 +164,7 @@ const Home = () => {
     <>
       <main className='home'>
         <nav className='homeNav text-center d-flex justify-content-center align-items-center'>
-          {decodedToken ? (
+          {decodedToken.profileImg ? (
             <img src={decodedToken.profileImg} alt='' />
           ) : (
             <img src={randomUser} alt='' />

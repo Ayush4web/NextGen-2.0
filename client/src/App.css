@@ -184,7 +184,6 @@ body {
 }
 
 .landing .calert{
-   color: red;
    font-family: monospace;
    background-color:whitesmoke;
    display: inline-block;

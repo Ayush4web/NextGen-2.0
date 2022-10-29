@@ -46,7 +46,7 @@ const Landing = () => {
       
     } 
      
-    setAlert({show:true,type:'secondary',text:"Redirecting...."})
+    setAlert({show:true,type:'success',text:"Redirecting...."})
 
     try {
       if (user.isMember) {
@@ -162,7 +162,7 @@ const Landing = () => {
                   >
                     <img src={google} alt='' />
                   </button>
-                  {alert.show && <p className='calert'>{alert.text}</p>}
+                  {alert.show && <p className={`calert text-${alert.type}`}>{alert.text}</p>}
                 </div>
               </div>
             </div>
