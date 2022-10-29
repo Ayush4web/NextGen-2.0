@@ -44,7 +44,9 @@ const Landing = () => {
       })
       return
       
-    }
+    } 
+     
+    setAlert({show:true,type:'secondary',text:"Redirecting...."})
 
     try {
       if (user.isMember) {
