@@ -28,7 +28,7 @@ const register = async (req, res) => {
     { expiresIn: '1h' }
   )
 
- res.status(201).cookie('token', token)
+ res.status(201).cookie('token', token).redirect('/home')
 
   // res.status(201).json({ success: 'true', token, user: { name, email } })
 }
@@ -69,7 +69,7 @@ const login = async (req, res) => {
   )
 
   
- res.status(200).cookie('token', token)
+ res.status(200).cookie('token', token).redirect('/home')
 
 
   
