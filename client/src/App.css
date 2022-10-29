@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+.heading {
+  font-weight: 700;
+  color: rgb(2, 61, 87) ;
+}
+.underline {
+  margin: 0 auto;
+  width: 70px;
+  height: 3px;
+  background-color:  rgb(14, 156, 212);
+}
+
+.body {
+  background-color: white;
+  margin: 1rem auto;
+  width: 50vw;
+  border-radius: 10px;
+  box-shadow: 1px 2px 17px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.webcam{
+ width: 250px;
+ height: 200px;
+  margin: 0rem auto;
+  padding-top: 1rem;
+  position: relative;
+}
+
+
+.c-btn{
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* utilities */
+
+.btn:focus{
+  box-shadow: none !important;
+ 
+}
+.form-control:focus{
+   box-shadow: none;
+   text-transform: capitalize;
+}
+.hide{
+ z-index: -10;
+}
+.show{
+ z-index: 10;
+}
+
+
+/* modal */
+.overlay{
+  position: absolute;
+  top: -25px;
+  z-index: 100;
+  height: 130%;
+  width: 110vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+
+}
+.card{
+  height: auto;
+  /* width: 450px; */
+  z-index: 1000;
+  /* transform: translate(-50%,-50%); */
+
+}
+.f-card{
+   height: auto;
+  width: 600px;
+}
+
+/* navbar */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  border-bottom: 3px solid rgb(12, 144, 197);
+}
+.img img{
+  height: 5rem;
+}
+
+.links{
+  display: flex;
+  justify-content: space-around;
+
+}
+.links li{
+  list-style: none;
+  cursor: pointer;
+  margin: 0 1rem;
+  font-size: large;
+  color: rgb(11, 67, 90) ;
+}
+
+/* 404 Page */
+.error{
+  background-color: white;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.error img{
+  height: 80vh;
+  width: 50vw;
+  
+}
+
+
+/* Landing  */
+.bg{
+  border-top: 4px solid red;
+    background: linear-gradient(to right, rgb(13, 13, 173),rgb(164, 10, 164),purple);
+  min-height: 100vh;
+  width: 100vw;
+}
+
+
+.landing .row{
+  border-top: 4px solid red;
+  padding-top: 1rem;
+}
+.landingImg img{
+   width: 95%;
+}
+
+.landingLogo img{
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+.landingForm{
+  transform: none;
+  border-radius: 12px;
+  color: rgb(129, 209, 255);
+}
+.landingForm input , .landingForm input:focus{
+  text-transform: lowercase;
+}
+.landingForm img{
+  width: 60%;
+}
+.landingForm{
+  border: 2px solid rgb(255, 187, 0);
+  background-color: transparent;
+  width: 360px;
+  margin: auto;
+  
+}
+
+.landingForm p{
+  margin-bottom: 0.5rem;
+}
+
+.pointer{
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+.text-custom{
+   color: rgb(0, 255, 229);
+}
+.text-custom span{
+   cursor: pointer;
+   color: rgb(249, 185, 66);
+}
+
+.landing .calert{
+   color: red;
+   font-family: monospace;
+   background-color:whitesmoke;
+   display: inline-block;
+    padding: 2px 10px;
+    margin-top: 10px;
+}
+
+
+/* home page */
+
+.homeNav{
+  padding:0.8rem 0;
+  background: linear-gradient(to right, purple,rgb(84, 84, 117));
+  border-bottom:4px solid rgb(255, 180, 4) ;
+}
+.home .homeNav img{
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+.homeNav p{
+  color: orange;
+}
+.bgp{
+  min-height: 90vh;
+   padding-bottom: 1rem;
+   background:
+  linear-gradient(
+    limegreen,
+    transparent
+  ),
+  linear-gradient(
+    90deg,
+    skyblue,
+    transparent
+  ),
+  linear-gradient(
+    -90deg,
+    coral,
+    transparent
+  );
+  
+background-blend-mode: screen;
+
+}
+
+.home .card{
+    width: 80%;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    position: relative;
+}
+
+.card-img-top{
+  height: 250px;
+  width: 250px;
+  margin: auto;
+}
+
+.home h5{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  color: rgb(72, 31, 17);
+  background-color: white;
+  margin-bottom: 0;
+  padding: 0.5rem;
+  width:max-content;
+}
+.right .card{
+  width: 100%;
+  height: 400px;
+}
+
+.home .form{
+  margin: 2rem auto;
+  width: 60%;
+}
+.home .form-control{
+  border-radius: 20px;
+}
+
+.redAlert{
+  border: 3px solid red;
+}
+
+.logout{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.feedbacks{
+  text-align: center;
+  margin: 2rem 0;
+  color: rgb(3, 70, 90);
+}
+
+.webcamWidth{
+   position: absolute;
+   top: 0;
+   z-index: 10;
+   left: 50%;
+   transform: translateX(-50%)  scaleX(-1);
+   width: 320px;
+   
+}
+
+.box1 , .box2, .box3{
+   width: 100px;
+   height: 100px;
+   margin: 1rem;
+   padding:0.22rem 0.2rem ;
+   font-size: 12px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box1{
+   border: 2px solid green;
+}
+.box2{
+border: 2px solid orange;
+}
+.box3{
+  border: 2px solid red;
+}
+
+.transp{
+  background-color: transparent;
+  border: none;
+}
