@@ -164,7 +164,7 @@ const Home = () => {
     <>
       <main className='home'>
         <nav className='homeNav text-center d-flex justify-content-center align-items-center'>
-          {decodedToken.profileImg ? (
+          {decodedToken && decodedToken.profileImg ? (
             <img src={decodedToken.profileImg} alt='' />
           ) : (
             <img src={randomUser} alt='' />
