@@ -26,7 +26,7 @@ const Landing = () => {
   }
 
   const handleSocialLogin = async () => {
-    window.open(`${process.env.REACT_APP_URL}/auth/google`, '_self')
+    window.open(`${process.env.REACT_APP_URL}auth/google`, '_self')
   }
 
   const handleChange = (e) => {
@@ -51,13 +51,13 @@ const Landing = () => {
     try {
       if (user.isMember) {
         const data = await axios.post(
-          `${process.env.REACT_APP_URL}/localauth/login`,
+          `${process.env.REACT_APP_URL}localauth/login`,
           user
         )
         
       } else {
         const data = await axios.post(
-          `${process.env.REACT_APP_URL}/localauth/register`,
+          `${process.env.REACT_APP_URL}localauth/register`,
           user
         )
       }

@@ -32,7 +32,7 @@ const AppProvider = ({ children }) => {
   }
 
   const loadLabeledImages = async () => {
-    const { data } = await axios(`${process.env.RECT_APP_URL}dashboard`)
+    const { data } = await axios(`${process.env.REACT_APP_URL}dashboard`)
     return Promise.all(
       data.map(async (d) => {
         const descriptions = []
