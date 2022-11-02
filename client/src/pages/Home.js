@@ -131,7 +131,7 @@ const Home = () => {
     setAlert({show:true,type:'secondary',text:'Uploading Images...'})
     try {
      
-      const { data } = await axios.post(`${process.env.REACT_APP_URL}/upload`, reqBody)
+      const { data } = await axios.post(`${process.env.REACT_APP_URL}upload`, reqBody)
 
       setPassenger({
         name: '',
