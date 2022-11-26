@@ -93,7 +93,7 @@ app.get(
     )
 
     res.cookie('token', token)
-    res.redirect(`${process.env.URL}/home`)
+    res.redirect('/home')
   }
 )
 
